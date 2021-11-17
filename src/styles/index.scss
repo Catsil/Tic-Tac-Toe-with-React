@@ -1,13 +1,39 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
-/* 
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
-    You can write your own styles here...
+.square {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    background: transparent;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+    border-radius: 2rem;
+    border: solid rgb(245, 245, 122) 0.5rem;
+    color: rgb(245, 245, 122);
+    text-align: center;
+    font-size: 6rem;
     
     
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+.circle {
+    border-radius: 100%;
+    background-color: brown;
+    text-align: center;
+}
+body {
+    background-image: url('https://images.pexels.com/photos/4219312/pexels-photo-4219312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+p{
+    font-size: 3rem;
+    color: white;
+}
